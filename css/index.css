@@ -1,0 +1,116 @@
+:root{
+    color-scheme: dark lights;
+}
+.body{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Sofia",monospace;
+    overflow: hidden;
+    background-image: linear-gradient(to top ,crimson,pink);
+}
+
+.card{
+    /* background-color: white; */
+    max-width: 768px;
+    text-align: center;
+   
+}
+
+.button{
+    background-color: white;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding:0.5em 1em;
+
+    &:last-child:hover{
+        opacity: 0;
+    }
+}
+
+.flexboxs{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        transform: translate(-100%,0) scale(0);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(100%,-100vh) scale(1);
+        opacity: 0;
+    }
+    
+}
+
+.buubleup{
+    font-size: 2rem;
+    animation: fadeIn 10s infinite ;
+    /* animation: name duration delay timing-function; */
+    &:nth-child(1){
+        animation-delay: -8s;
+    }
+    &:nth-child(2){
+        animation-delay: -9s;
+    }
+    &:nth-child(3){
+        animation-delay: -6s;
+    }
+    &:nth-child(4){
+        animation-delay: -11s;
+    }
+    &:nth-child(5){
+        animation-delay: -4s;
+    }
+    &:nth-child(6){
+        animation-delay: -13s;
+    }
+    &:nth-child(7){
+        animation-delay: -2s;
+    }
+    &:nth-child(8){
+        animation-delay: -15s;
+    }
+    &:nth-child(9){
+        animation-delay: -1s;
+    }
+    &:nth-child(10){
+        animation-delay: -16s;
+    }
+    &:nth-child(11){
+        animation-delay: -3s;
+    }
+    &:nth-child(12){
+        animation-delay: -14s;
+    }
+    &:nth-child(13){
+        animation-delay: -5s;
+    }
+    &:nth-child(14){
+        animation-delay: -12s;
+    }
+    &:nth-child(15){
+        animation-delay: -7s;
+    }
+    &:nth-child(16){
+        animation-delay: -10s;
+    }
+}
+
